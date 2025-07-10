@@ -1,0 +1,8 @@
+version: "3"
+services:
+  sphinx-check-ai:
+    build: .
+    container_name: test-mahoa-api
+    ports:
+      - "5117:5117"    
+    restart: unless-stopped
